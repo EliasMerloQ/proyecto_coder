@@ -4,54 +4,64 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-/* header */
 }
-.header {
-  font-family: "Montserrat", sans-serif;
+/*Header*/
+.nav {
   background-color: #353535;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 3rem 5%;
+  align-items: center; 
+  padding: 2rem 5%;
+}
+.cont__nav{
+ margin: 0 0 0 0;
 }
 .title {
   width: fit-content;
   text-align: center;
   color: white;
   background-color: #353535;
-}
-.title h1 {
   font-size: 40px;
   font-weight: 500;
+  transition: all 0.3s ease 0s;
 }
-/* Nav bar */
-li, a, button {
+.title:hover {
+  color: #0088a9;
+}
+.nav__element {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 20px;
   color: white;
   text-decoration: none;
-}
-.nav_links li {
-  display: inline-block;
-padding: 0px 20px;
-}
-.nav_links li a {
   transition: all 0.3s ease 0s;
+  margin: 5px 16px;
 }
-.nav_links li a:hover {
-   color: #0088a9;
+.nav__contact {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  margin: 0 0 0 13rem;
 }
-button {
+.nav__contact:hover {
+  background-color: rgba(0, 136, 169, 0.5);
+}
+.nav__button{
+  background-color: #d3d5d4;
+}
+.nav__element:hover {
+  color: #0088a9;
+}
+.contact {
   padding: 9px 25px;
   background-color: rgba(0, 136, 169, 1);
   border: none;
   border-radius: 50px;
   cursor: pointer ;
   transition: all 0.3s ease 0s;
-}
-button:hover {
-  background-color: rgba(0, 136, 169, 0.5);
 }
   /* header fin */
 
@@ -104,7 +114,7 @@ footer {
 main {
   background-color: #d3d5d4;
 }
-/*main inicio*/
+/*main index*/
 .hero__section {
   background-image: url(../img/1242400-hugh-laurie-dr-house-selective-color-eyes.jpg);
   background-repeat: no-repeat;
@@ -126,7 +136,7 @@ main {
   font-weight: 500;
   background-color: #00000080;
 }
-.hero__section__2 {
+.section {
   background-image: url(../img/House-hugh-laurie-573540_1024_768_with_no_logo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -139,12 +149,12 @@ main {
   width: 100%;
   min-height: 100vh;
 }
-.hero__inicio__2 {
+.section__txt {
   font-family: "Montserrat";
   color: black;
   text-align: center;
-  font-size: 2rem;
-  padding: 0 0 2rem 15rem;
+  font-size: 1.9rem;
+  padding: 0 0 0 15rem;
   width: 1000px;
 }
 /*main fin*/
@@ -281,10 +291,14 @@ main {
   text-align: center;
   font-size: 18px;
 }
-/* Media Queries (Estilos Mobile*/
+/* Media Queries (Estilos Mobile)*/
+/*header*/
 @media screen and (max-width: 768px) {
-  .header {
-    display: flex;
-    flex-direction: column;
+  .nav__contact {
+    margin: 0;
   }
+}
+/*Index*/
+@media screen amd (max-width:768px) {
+  
 }
