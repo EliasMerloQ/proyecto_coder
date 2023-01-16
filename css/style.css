@@ -5,65 +5,65 @@
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
-/*Header*/
-.nav {
-  background-color: #353535;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; 
-  padding: 2rem 5%;
-}
-.cont__nav{
- margin: 0 0 0 0;
-}
-.title {
-  width: fit-content;
-  text-align: center;
-  color: white;
-  background-color: #353535;
-  font-size: 40px;
-  font-weight: 500;
-  transition: all 0.3s ease 0s;
-}
-.title:hover {
-  color: #0088a9;
-}
-.nav__element {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  color: white;
-  text-decoration: none;
-  transition: all 0.3s ease 0s;
-  margin: 5px 16px;
-}
-.nav__contact {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  color: white;
-  text-decoration: none;
-  transition: all 0.3s ease 0s;
-  margin: 0 0 0 13rem;
-}
-.nav__contact:hover {
-  background-color: rgba(0, 136, 169, 0.5);
-}
-.nav__button{
-  background-color: #d3d5d4;
-}
-.nav__element:hover {
-  color: #0088a9;
-}
-.contact {
-  padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer ;
-  transition: all 0.3s ease 0s;
-}
-  /* header fin */
+  /*Header*/
+  .nav {
+    background-color: #353535;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 2rem 5%;
+  }
+  .cont__nav{
+   margin: 0 0 0 0;
+  }
+  .title {
+    width: fit-content;
+    text-align: center;
+    color: white;
+    background-color: #353535;
+    font-size: 40px;
+    font-weight: 500;
+    transition: all 0.3s ease 0s;
+  }
+  .title:hover {
+    color: #0088a9;
+  }
+  .nav__element {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    margin: 5px 16px;
+  }
+  .nav__button{
+    background-color: #d3d5d4;
+  }
+  .nav__element:hover {
+    color: #0088a9;
+  }
+  .container__contact {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer ;
+    transition: all 0.3s ease 0s;
+    margin: 0 0 0 10rem ;
+  }
+  .container__contact:hover {
+    background-color: rgba(0, 136, 169, 0.5);
+  }
+  .contact {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+  }
+    /* header fin */
 
   /* footer */
 footer {
@@ -114,7 +114,7 @@ footer {
 main {
   background-color: #d3d5d4;
 }
-/*main index*/
+/*main inicio*/
 .hero__section {
   background-image: url(../img/1242400-hugh-laurie-dr-house-selective-color-eyes.jpg);
   background-repeat: no-repeat;
@@ -135,9 +135,12 @@ main {
   text-align: center;
   font-weight: 500;
   background-color: #00000080;
+  -webkit-animation: hero__txt 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: hero__txt 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 .section {
-  background-image: url(../img/House-hugh-laurie-573540_1024_768_with_no_logo.jpg);
+  display: flex;
+  background-image: url(../img/teahub.io-erkek-wallpaper-1902330.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: white;
@@ -147,15 +150,16 @@ main {
   padding: 0rem 1rem;
   padding-top: 1rem;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
 }
 .section__txt {
   font-family: "Montserrat";
-  color: black;
-  text-align: center;
-  font-size: 1.9rem;
-  padding: 0 0 0 15rem;
+  color: white;
+  text-align:justify;
+  font-size: 1.7rem;
+  padding: 0 0 0rem 0rem;
   width: 1000px;
+  background-color:#00000080;;
 }
 /*main fin*/
 
@@ -291,14 +295,52 @@ main {
   text-align: center;
   font-size: 18px;
 }
-/* Media Queries (Estilos Mobile)*/
-/*header*/
+/* Media Queries (Estilos Mobile*/
 @media screen and (max-width: 768px) {
-  .nav__contact {
+  /* Header*/
+  .container__contact {
+    margin: 0;
+  }
+  /*Index*/
+  .hero__txt {
+    font-size: 150%;
+  }
+  .section {
+    height: 100%;
+    width: 100%;
+  }
+  .section__txt {
+    padding: 0 5%;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 1024) {
+  .container__contact {
     margin: 0;
   }
 }
-/*Index*/
-@media screen amd (max-width:768px) {
-  
+@-webkit-keyframes hero__txt {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes hero__txt {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
 }
