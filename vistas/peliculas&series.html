@@ -40,21 +40,38 @@
             </div>
         </nav>
     </header>
-    <main class="main__hero">
-        <section class="hero__ps">
-            <img class="img__ps" src="../img/Doctor-House.jpg" alt="">
-            <div class="conteiner__ps">
-                <h1 class="title__ps">House M.D.</h1>
-                <p class="txt__ps">House M. D es una serie de televisión estadounidense estrenada en 2004 por la cadena FOX y finalizada en 2012. Fue creada por David Shore, quien además es productor ejecutivo junto a otros como Paul Attanasio, Katie Jacobs o Bryan Singer. El personaje central es el Dr. Gregory House (Hugh Laurie), un genio médico, irónico, satírico y poco convencional e inconformista, que encabeza un equipo de diagnóstico en el real Hospital Universitario Princeton-Plainsboro de Nueva Jersey. El argumento fue idea de Paul Attanasio, basándose en una columna médica escrita por la Dra. Lisa Sanders en el periódico The New York Times, mientras que la creación de los personajes corrió a cargo de Shore después de su visita a un hospital universitario. Las localizaciones están situadas en Century City, un distrito de Los Ángeles, California.</p>
-            </div>
-        </section>
-        <hr class="line__ps">
-        <section class="hero__ps reverse__ps">
-            <div>
-                <h1 class="title__ps">Stuar Little</h1>
-                <p class="txt__ps">Stuart Little (llamada ocasionalmente Stuart Little: Un ratón en la familia en Hispanoamérica) es una película estadounidense de comedia familiar del año 1999, dirigida por Rob Minkoff y basada en el libro homónimo de E.B. White. La película combina imagen real y la animación por computadora. Está protagonizada por Geena Davis, Hugh Laurie, Jonathan Lipnicki, Michael J. Fox como la voz de Stuart, y Nathan Lane como la voz del Gato Pelusa. La película fue estrenada el 17 de diciembre de 1999 por Columbia Pictures.</p>
-            </div>
-            <img class="img__ps" src="../img/stuart-little-elenco-1.png" alt="">
+    <main class="container-fluid p-0 overflow-hidden">
+        <section class="row ps__main">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/Doctor-House.jpg" class="d-block w-100 ps__img" alt="...">
+                    <div class="container" style="background-color: white">
+                        <h1 class="d-block w-100 ps__title">House M.D.</h1>
+                        <p class="d-block w-100 ps__txt"> House M. D es una serie de televisión estadounidense estrenada en 2004 por la cadena FOX y finalizada en 2012. Fue creada por David Shore, quien además es productor ejecutivo junto a otros como Paul Attanasio, Katie Jacobs o Bryan Singer. El personaje central es el Dr. Gregory House (Hugh Laurie), un genio médico, irónico, satírico y poco convencional e inconformista, que encabeza un equipo de diagnóstico en el real Hospital Universitario Princeton-Plainsboro de Nueva Jersey. El argumento fue idea de Paul Attanasio, basándose en una columna médica escrita por la Dra. Lisa Sanders en el periódico The New York Times, mientras que la creación de los personajes corrió a cargo de Shore después de su visita a un hospital universitario. Las localizaciones están situadas en Century City, un distrito de Los Ángeles, California.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/71w-QxWv90L._RI_.jpg" class="d-block w-100 ps__img" alt="...">
+                    <div class="container" style="background-color: white"">
+                        <h1 class="d-block w-100 ps__title">Alfresco</h1>
+                        <p class="d-block w-100 ps__txt"> Alfresco es una serie de televisión de comedia británica protagonizada por Robbie Coltrane, Ben Elton, Stephen Fry, Hugh Laurie, Siobhan Redmond y Emma Thompson, producida por Granada Television y transmitida por ITV desde mayo de 1983 hasta junio de 1984. Con dos series, totalizó 13 episodios y se llamó Alfresco (del italiano al fresco , que significa "al aire libre") porque, inusualmente para un programa de sketches de comedia de la época, se filmó en el lugar en lugar de en un estudio.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
     </main> 
     <footer>

@@ -135,8 +135,8 @@ main {
   text-align: center;
   font-weight: 500;
   background-color: #00000080;
-  -webkit-animation: hero__txt 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: hero__txt 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  -webkit-animation: hero__txt 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: hero__txt 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 .section {
   display: flex;
@@ -152,14 +152,16 @@ main {
   width: 100%;
   height: 100vh;
 }
+.cont__txt {
+  background-color:#00000080;
+}
 .section__txt {
   font-family: "Montserrat";
   color: white;
   text-align:justify;
   font-size: 1.7rem;
-  padding: 0 0 0rem 0rem;
   width: 1000px;
-  background-color:#00000080;;
+  margin: 0;
 }
 /*main fin*/
 
@@ -174,31 +176,17 @@ main {
 }
 /* main bio fin*/
 /* main Movies & films*/
-.hero__ps {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 2rem;
+.ps__main {
+  margin: 5vh 10%;
 }
-.img__ps {
-  height: 25rem;
-  width: 47.5rem;
+.ps__img {
+  height: 80vh;
 }
-.txt__ps {
-  padding: 0.5rem 3rem 0 1rem;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
+.ps__title {
+  padding:  0 5vh;
 }
-.title__ps {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  padding: 1rem 0 0 0;
-  font-size: 2.5rem;
-}
-.line__ps {
-  height: 1rem;
- background-color: #353535 ;
- padding: 0;
- margin: 0;
+.ps__txt {
+  padding: 1vh 5vh;
 }
 /*main movies & films fin*/
 /*main music & videos*/
@@ -280,7 +268,7 @@ main {
     font-size: 150%;
   }
   .section {
-    height: 100%;
+    height: 70vh;
     width: 100%;
   }
   .section__txt {
@@ -288,12 +276,19 @@ main {
     width: 100%;
     font-size: 0.8rem;
   }
-}
-@media screen and (max-width: 1024) {
-  .container__contact {
-    margin: 0;
+  /*Bio*/
+  .cont__bio {
+  }
+  /*Peliculas&Series*/
+  .ps__main {
+    margin: 3vh 0;
+  }
+  .ps__img {
+    height: 50vh;
   }
 }
+
+/*Animaciones*/
 @-webkit-keyframes hero__txt {
   0% {
     -webkit-filter: blur(12px);
