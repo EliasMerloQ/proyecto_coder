@@ -5,67 +5,67 @@
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
-  /*Header*/
-  .nav {
-    background-color: #353535;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    padding: 2rem 5%;
-  }
-  .cont__nav{
-   margin: 0 0 0 0;
-  }
-  .title {
-    width: fit-content;
-    text-align: center;
-    color: white;
-    background-color: #353535;
-    font-size: 40px;
-    font-weight: 500;
-    transition: all 0.3s ease 0s;
-  }
-  .title:hover {
-    color: #0088a9;
-  }
-  .nav__element {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s ease 0s;
-    margin: 5px 16px;
-  }
-  .nav__button{
-    background-color: #d3d5d4;
-  }
-  .nav__element:hover {
-    color: #0088a9;
-  }
-  .container__contact {
-    padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer ;
-    transition: all 0.3s ease 0s;
-    margin: 0 0 0 10rem ;
-  }
-  .container__contact:hover {
-    background-color: rgba(0, 136, 169, 0.5);
-  }
+/*Header*/
+.nav {
+  background-color: #353535;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+   padding: 2rem 5%;
+}
+.cont__nav{
+  margin: 0 0 0 0;
+}
+ .title {
+   width: fit-content;
+   text-align: center;
+   color: white;
+   background-color: #353535;
+   font-size: 40px;
+   font-weight: 500;
+   transition: all 0.3s ease 0s;
+}
+.title:hover {
+  color: #0088a9;
+}
+.nav__element {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 500;
+   font-size: 20px;
+   color: white;
+   text-decoration: none;
+   transition: all 0.3s ease 0s;
+  margin: 5px 16px;
+}
+ .nav__button{
+   background-color: #d3d5d4;
+}
+.nav__element:hover {
+  color: #0088a9;
+}
+.container__contact {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer ;
+  transition: all 0.3s ease 0s;
+  margin: 0 0 0 10rem ;
+}
+.container__contact:hover {
+  background-color: rgba(0, 136, 169, 0.5);
+}
   .contact {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s ease 0s;
-  }
-    /* header fin */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+/* header fin */
 
-  /* footer */
+/* footer */
 footer {
   background-color: #353535;
   height: auto;
@@ -163,40 +163,14 @@ main {
 }
 /*main fin*/
 
-/*main bio*/
-.hero__bio {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(3,1fr);
-  background-color: #d3d5d4;
-  padding: 2rem;
+/*Bio*/
+.biografia {
+  padding: 8vh 0 8vh 0;
 }
-.img__bio {
-  width: 25rem;
-  height: 25rem;
-  margin: 1rem 0 0 1rem;
-  border-radius: 50%;
-}
-.box__one__bio {
-  display: flex;
-  justify-content: center;
-
-}
-.txt__bio {
-  font-family: "Montserrat", sans-serif;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  text-align: center;
-  font-size: 1.3rem;
-  padding: 1rem;
-}
-.title__bio {
-  font-family: "Montserrat", sans-serif;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  text-align: center;
-  font-size: 4rem;
-  padding: 1rem;
+.cont__bio {
+  font-size: 14px;
+  border-style: ridge;
+  border-color:#353535;
 }
 /* main bio fin*/
 /* main Movies & films*/
