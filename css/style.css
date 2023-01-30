@@ -3,11 +3,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "aileron";
 }
 /*Header*/
 .nav {
-  background-color: #353535;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center; 
@@ -19,10 +19,9 @@
  .nav__title {
    width: fit-content;
    text-align: center;
-   color: white;
-   background-color: #353535;
+   color: black;
    font-size: 40px;
-   font-weight: 500;
+   font-weight: 600;
    transition: all 0.3s ease 0s;
 }
 .nav__title:hover {
@@ -32,7 +31,7 @@
    font-family: "Montserrat", sans-serif;
    font-weight: 500;
    font-size: 20px;
-   color: white;
+   color: black;
    text-decoration: none;
    transition: all 0.3s ease 0s;
   margin: 5px 16px;
@@ -45,12 +44,12 @@
 }
 .nav__contact {
   padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
+  background-color: black;
   border: none;
   border-radius: 50px;
   cursor: pointer ;
   transition: all 0.3s ease 0s;
-  margin: 0 0 0 10rem ;
+  margin: 0 0 0 15rem ;
 }
 .nav__contact:hover {
   background-color: rgba(0, 136, 169, 0.5);
@@ -111,57 +110,66 @@ footer {
 }
 /* footer fin*/
 /*main*/
-main {
-  background-color: #d3d5d4;
+.main {
+  background-image: url(../img/teahub.io-erkek-wallpaper-1902330.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 /*main inicio*/
+/*hero*/
 .hero {
-  background-image: url(../img/1242400-hugh-laurie-dr-house-selective-color-eyes.jpg);
+  background-image: url(../img/hugh_laurie1.png);
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  justify-content: center;
   background-size: cover;
   width: 100%;
   height: 100vh;
 }
+.hero__contenedor {
+  margin: 0  0 7rem 10rem;
+}
+.hero__title {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 97.3334px;
+  line-height: 0.95em;
+  -webkit-animation: hero__title 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: hero__title 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.hero__title2 {
+  font-size: 113.33px;
+  line-height: 0.95em;
+  margin: 0 0 3rem 0 ;
+}
 .hero__txt {
-  font-size: 250%;
-  margin: 150px 10%;
-  padding: 1%;
-  color: white;
-  text-align: center;
-  font-weight: 500;
-  background-color: #00000080;
+  font-size: 26px;
+  color: #9b9b9b;
+  text-align:left;
+  font-weight: 700;
+  line-height: 0.95em;
   -webkit-animation: hero__txt 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: hero__txt 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
+/*hero fin*/
 .section {
-  display: flex;
-  background-image: url(../img/teahub.io-erkek-wallpaper-1902330.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: white;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0rem 1rem;
-  padding-top: 1rem;
-  width: 100%;
-  height: 100vh;
+  padding: 8vh 0 8vh 0;
+  background-color: #141414;
 }
-.cont__txt {
-  background-color:#00000080;
+.section__container {
+  color: #ffffff;
 }
-.section__txt {
-  font-family: "Montserrat";
-  color: white;
-  text-align:justify;
-  font-size: 1.7rem;
-  width: 1000px;
-  margin: 0;
+.section__container__h2 {
+  font-size: 56px;
+  font-weight: 700;
+  margin: 0 5%;
+}
+.section__container__txt {
+  margin: 1rem 7% 0 5%;
+  font-size: 20px;
 }
 /*main fin*/
 
@@ -173,6 +181,8 @@ main {
   font-size: 14px;
   border-style: ridge;
   border-color:#353535;
+  background-color: #d3d5d4;
+  border-radius: 1%;
 }
 /* main bio fin*/
 /* main Movies & films*/
@@ -228,6 +238,13 @@ main {
 /*main music & videos fin*/
 
 /*main contact*/
+.formMargen {
+  padding: 10vh 0 8vh 0;
+  justify-content: space-around;
+}
+.main__contacto {
+  background-color: #d3d5d4;
+}
 .register__contact {
   width: 400px;
   background-color: #24303c;
@@ -265,12 +282,16 @@ main {
   }
   /*Index*/
   .hero {
+    background-position: center 50%;
     width: 100%;
-    height: 75vh;
+    height: 70vh;
   }
   .hero__txt {
-    font-size: 110%;
+    font-size: 20px;
     margin: 70px 10%;
+  }
+  .hero__title {
+    font-size: 30px;
   }
   .section {
     height: 70vh;
@@ -290,7 +311,11 @@ main {
     height: 50vh;
   }
 }
-
+@media screen and  (max-width: 320px){
+  .nav__title {
+    font-size: 30px;
+  }
+}
 /*Animaciones*/
 @-webkit-keyframes hero__txt {
   0% {
@@ -313,6 +338,30 @@ main {
   100% {
     -webkit-filter: blur(0px);
             filter: blur(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes hero__title {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateX(-1000px);
+            transform: translateZ(-1400px) translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateX(0);
+            transform: translateZ(0) translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes hero__title {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateX(-1000px);
+            transform: translateZ(-1400px) translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateX(0);
+            transform: translateZ(0) translateX(0);
     opacity: 1;
   }
 }
