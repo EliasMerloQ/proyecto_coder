@@ -1,58 +1,55 @@
 /*Header*/
 .nav {
-    background-color: #353535;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-     padding: 2rem 5%;
-     &__container {
-        margin: 0 0 0 0;
-    }
-    &__title {
-        width: fit-content;
-        text-align: center;
-        color: white;
-        background-color: #353535;
-        font-size: 40px;
-        font-weight: 500;
-        transition: all 0.3s ease 0s; 
-        &:hover {
-            color: #0088a9;
-        }
-     }
-     &__element {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 500;
-        font-size: 20px;
-        color: white;
-        text-decoration: none;
-        transition: all 0.3s ease 0s;
-        margin: 5px 16px;
-        &:hover {
-            color: #0088a9;
-         }
-     }
-     &__buttom{
-        background-color: #d3d5d4;
-     }
-     &__contact {
-        padding: 9px 25px;
-        background-color: rgba(0, 136, 169, 1);
-        border: none;
-        border-radius: 50px;
-        cursor: pointer ;
-        transition: all 0.3s ease 0s;
-        margin: 0 0 0 10rem ;
-        &:hover {
-            background-color: rgba(0, 136, 169, 0.5);
-         }
-        &__buttom {
-            font-family: "Montserrat", sans-serif;
-            font-weight: 500;
-            font-size: 20px;
-            color: white;
-            text-decoration: none;
-            transition: all 0.3s ease 0s;
-         }
-      }
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 2rem 5%;
+  &__container {
+    margin: 0 0 0 0;
   }
+  &__title {
+    width: fit-content;
+    text-align: center;
+    color: #141414;
+    font-size: 40px;
+    font-weight: 600;
+    transition: all 0.3s ease 0s; 
+    &:hover {
+      color: #0088a9;
+    }
+  }
+  &__element {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    margin: 5px 16px;
+    &:hover {
+      color: #0088a9;
+    }
+  }
+  &__buttom {
+    background-color: #d3d5d4;
+  }
+  &__contact {
+    padding: 9px 25px;
+    background-color: #000000;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin: 0 0 0 13rem ;
+    &:hover {
+        background-color: rgba(0, 136, 169, 0.5);
+    }
+    &__buttom {
+      font-weight: 500;
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease 0s;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+/*Index section*/
+.sectionI {
+  padding: 8vh 0 8vh 0;
+  background-color: #141414;
+  &__container {
+    color: #ffffff;
+    &__h2 {
+      font-size: 56px;
+      font-weight: 700;
+      margin: 0 5%;
+    }
+    &__txt {
+      margin: 1rem 7% 0 5%;
+      font-size: 20px;
+    }
+  }
+}

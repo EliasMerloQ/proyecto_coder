@@ -21,7 +21,7 @@
  .nav__title {
    width: fit-content;
    text-align: center;
-   color: black;
+   color: #000000;
    font-size: 40px;
    font-weight: 600;
    transition: all 0.3s ease 0s;
@@ -32,7 +32,7 @@
 .nav__element {
    font-weight: 500;
    font-size: 20px;
-   color: black;
+   color: #000000;
    text-decoration: none;
    transition: all 0.3s ease 0s;
   margin: 5px 16px;
@@ -45,7 +45,7 @@
 }
 .nav__contact {
   padding: 9px 25px;
-  background-color: black;
+  background-color: #000000;
   border: none;
   border-radius: 50px;
   cursor: pointer ;
@@ -55,8 +55,7 @@
 .nav__contact:hover {
   background-color: rgba(0, 136, 169, 0.5);
 }
-  .nav__contact__buttom {
-  font-family: "Montserrat", sans-serif;
+.nav__contact__buttom {
   font-weight: 500;
   font-size: 20px;
   color: white;
@@ -149,19 +148,19 @@ footer {
 	        animation: hero__txt 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 /*hero fin*/
-.section {
+.sectionI {
   padding: 8vh 0 8vh 0;
   background-color: #141414;
 }
-.section__container {
+.sectionI__container {
   color: #ffffff;
 }
-.section__container__h2 {
+.sectionI__container__h2 {
   font-size: 56px;
   font-weight: 700;
   margin: 0 5%;
 }
-.section__container__txt {
+.sectionI__container__txt {
   margin: 1rem 7% 0 5%;
   font-size: 20px;
 }
@@ -180,7 +179,7 @@ footer {
   border-radius: 1%;
 }
 /* main bio fin*/
-/* main Movies & films*/
+/* main Filmografía*/
 .ps__main {
   margin: 5vh 10%;
 }
@@ -193,8 +192,12 @@ footer {
 .ps__txt {
   padding: 1vh 5vh;
 }
-/*main movies & films fin*/
-/*main Filmografia*/
+/*main Filmografia fin*/
+/*main Discografia*/
+.sectionD {
+  padding: 8vh 0 8vh 0;
+  background-color: #141414;
+}
 .sectionD__h1 {
   font-family: "aileron",sans-serif;
   color: #ffffff;
@@ -262,17 +265,17 @@ footer {
   color: #ffffff;
   padding: 0 15%;
 }
-/*Filmografia fin*/
+/*Discografia fin*/
 
 /*main contact*/
 .sectionC {
-  background-image: url(../img/teahub.io-erkek-wallpaper-1902330.jpg);
+  background-color: #141414;
   background-position: center;
   background-size: cover;
 }
 .formMargen {
   padding: 10vh 0 8vh 0;
-  justify-content: space-around;
+  
 }
 .sectionC__contacto {
   background-color: #141414;
@@ -291,7 +294,7 @@ footer {
   border-radius: 25px;
   letter-spacing: 2px;
 }
-/* Media Queries (Estilos Mobile*/
+/*Media Queries (Estilos Tablet & Mobile)*/
 @media screen and (max-width: 768px) {
   /* Header*/
   .nav__contact {
@@ -300,7 +303,7 @@ footer {
   /*Index*/
   /*hero*/
   .hero {
-    background-image: url(../img/hugh_laurie_phone_size.png);
+    background-image: url(../img/tablet_size.png);
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -367,7 +370,18 @@ footer {
     font-size: 15px;
   }
 }
-@media screen and  (max-width: 320px){
+
+@media screen and (max-width: 426px){
+  .hero {
+    background-image: url(../img/hugh_laurie_phone_size.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    align-items: initial;
+  }
+}
+@media screen and (max-width: 320px){
   .nav__title {
     font-size: 30px;
   }

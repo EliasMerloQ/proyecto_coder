@@ -1,0 +1,74 @@
+/*main Discografia*/
+.sectionD {
+  padding: 8vh 0 8vh 0;
+  background-color: #141414;
+  &__h1 {
+    font-family: "aileron",sans-serif;
+    color: #ffffff;
+    text-align: center;
+    margin:48px 0 24px 0;
+    font-weight: 700;
+    font-size: 4rem;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 0.4fr);
+    justify-items: center;
+    width: 100%;
+    gap: 17px;
+    justify-content: space-evenly;
+    padding: 4vh;
+    &__container {
+      position: relative;
+      overflow: hidden;
+      width: 512px;
+      height: 512px;
+      margin: 0 0 1.5rem 0;
+      border-radius: 6px;
+      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      &:hover &__img {
+        transform: scale(1.3); 
+      }
+      &:hover &__img{
+        transform: scale(1.3); 
+      }
+      &:hover &__overlay{
+        opacity: 1;
+        visibility: visible;
+        -webkit-animation: fade-in-bck 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in-bck 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; 
+      }
+      &__img {
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out;
+      }
+      &__overlay {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #00000080;
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center;
+      }
+      &__title {
+        font-size: 2rem;
+        margin-top: 10rem;
+        color: #ffffff;
+        text-align: center;
+      }
+      &__txt {
+        text-align: center;
+        color: #ffffff;
+        padding: 0 15%;
+      }
+    }
+  }
+}
+.title2 {
+  margin-top: 0;
+}

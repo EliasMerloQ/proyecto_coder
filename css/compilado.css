@@ -1,27 +1,35 @@
+@charset "UTF-8";
+/* Adobe Font*/
+@import url("https://use.typekit.net/pqd5yrn.css");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "aileron";
+  overflow-x: hidden; }
+
 /*Header*/
 .nav {
-  background-color: #353535;
+  background-color: #f9f9f9;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 5%; }
-  .nav__cont {
+  .nav__container {
     margin: 0 0 0 0; }
   .nav__title {
     width: fit-content;
     text-align: center;
-    color: white;
-    background-color: #353535;
+    color: #141414;
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 600;
     transition: all 0.3s ease 0s; }
     .nav__title:hover {
       color: #0088a9; }
   .nav__element {
-    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 20px;
-    color: white;
+    color: #000000;
     text-decoration: none;
     transition: all 0.3s ease 0s;
     margin: 5px 16px; }
@@ -31,18 +39,347 @@
     background-color: #d3d5d4; }
   .nav__contact {
     padding: 9px 25px;
-    background-color: #0088a9;
+    background-color: #000000;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    margin: 0 0 0 10rem; }
+    margin: 0 0 0 13rem; }
     .nav__contact:hover {
       background-color: rgba(0, 136, 169, 0.5); }
     .nav__contact__buttom {
-      font-family: "Montserrat", sans-serif;
       font-weight: 500;
       font-size: 20px;
       color: white;
       text-decoration: none;
       transition: all 0.3s ease 0s; }
+
+.hero {
+  background-image: url(../img/hugh_laurie1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  background-size: cover;
+  width: 100%;
+  height: 100vh; }
+  .hero__contenedor {
+    margin: 0  0 7rem 10rem; }
+  .hero__title {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 97.3334px;
+    line-height: 0.95em;
+    -webkit-animation: hero__title 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: hero__title 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+  .hero__title2 {
+    font-size: 113.33px;
+    line-height: 0.95em;
+    margin: 0 0 3rem 0; }
+  .hero__txt {
+    font-size: 26px;
+    color: #9b9b9b;
+    text-align: left;
+    font-weight: 700;
+    line-height: 0.95em;
+    -webkit-animation: hero__txt 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    animation: hero__txt 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
+
+/*Index section*/
+.sectionI {
+  padding: 8vh 0 8vh 0;
+  background-color: #141414; }
+  .sectionI__container {
+    color: #ffffff; }
+    .sectionI__container__h2 {
+      font-size: 56px;
+      font-weight: 700;
+      margin: 0 5%; }
+    .sectionI__container__txt {
+      margin: 1rem 7% 0 5%;
+      font-size: 20px; }
+
+/*Biografia*/
+.biografia {
+  padding: 8vh 0 8vh 0;
+  background-color: #141414; }
+
+.cont__bio {
+  font-size: 14px;
+  border-style: ridge;
+  border-color: #353535;
+  background-color: #d3d5d4;
+  border-radius: 1%; }
+
+.ps__main {
+  margin: 5vh 10%; }
+
+.ps__img {
+  height: 80vh; }
+
+.ps__title {
+  padding: 0 5vh; }
+
+.ps__txt {
+  padding: 1vh 5vh; }
+
+/*main Discografia*/
+.sectionD {
+  padding: 8vh 0 8vh 0;
+  background-color: #141414; }
+  .sectionD__h1 {
+    font-family: "aileron",sans-serif;
+    color: #ffffff;
+    text-align: center;
+    margin: 48px 0 24px 0;
+    font-weight: 700;
+    font-size: 4rem; }
+  .sectionD__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 0.4fr);
+    justify-items: center;
+    width: 100%;
+    gap: 17px;
+    justify-content: space-evenly;
+    padding: 4vh; }
+    .sectionD__grid__container {
+      position: relative;
+      overflow: hidden;
+      width: 512px;
+      height: 512px;
+      margin: 0 0 1.5rem 0;
+      border-radius: 6px;
+      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+      cursor: pointer; }
+      .sectionD__grid__container:hover .sectionD__grid__container__img {
+        transform: scale(1.3); }
+      .sectionD__grid__container:hover .sectionD__grid__container__img {
+        transform: scale(1.3); }
+      .sectionD__grid__container:hover .sectionD__grid__container__overlay {
+        opacity: 1;
+        visibility: visible;
+        -webkit-animation: fade-in-bck 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation: fade-in-bck 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+      .sectionD__grid__container__img {
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out; }
+      .sectionD__grid__container__overlay {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #00000080;
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center; }
+      .sectionD__grid__container__title {
+        font-size: 2rem;
+        margin-top: 10rem;
+        color: #ffffff;
+        text-align: center; }
+      .sectionD__grid__container__txt {
+        text-align: center;
+        color: #ffffff;
+        padding: 0 15%; }
+
+.title2 {
+  margin-top: 0; }
+
+/*main contact*/
+.sectionC {
+  background-color: #141414;
+  background-position: center;
+  background-size: cover; }
+  .sectionC__contacto {
+    background-color: #141414;
+    color: #ffffff; }
+    .sectionC__contacto__buttom {
+      background-color: #0088a9;
+      border-color: #0088a9;
+      border-radius: 25px;
+      letter-spacing: 2px; }
+  .sectionC__bloque2 {
+    background-color: #141414; }
+    .sectionC__bloque2__img {
+      width: 100%;
+      height: 100%; }
+
+.formMargen {
+  padding: 10vh 0 8vh 0; }
+
+/* footer */
+footer {
+  background-color: #f9f9f9;
+  height: auto;
+  font-family: "Montserrat";
+  color: #141414;
+  padding-top: 40px; }
+
+.footer_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+  .footer_content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize; }
+
+.footer_bottom p {
+  font-size: 14px;
+  word-spacing: 2px; }
+
+.socials {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 1rem 0; }
+  .socials li {
+    margin: 0 10px; }
+  .socials a i {
+    font-size: 1.1rem; }
+  .socials a:hover i {
+    font-size: 1.1rem;
+    transition: color .4s ease; }
+  .socials a:hover i {
+    color: #0088a9; }
+
+/*Media Queries (Estilos Tablet & Mobile)*/
+@media screen and (max-width: 768px) {
+  /* Header*/
+  .nav__contact {
+    margin: 0; }
+  /*Index*/
+  /*hero*/
+  .hero {
+    background-image: url(../img/tablet_size.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    align-items: initial; }
+    .hero__contenedor {
+      margin: 0; }
+    .hero__title {
+      font-size: 40px;
+      margin: 0;
+      padding: 2rem 0 0 1.3rem; }
+    .hero__title2 {
+      margin: 0;
+      padding: 0 0 1rem 1.3rem;
+      font-size: 50px; }
+    .hero__txt {
+      font-size: 15px;
+      margin: 0;
+      padding: 0 7rem 0 1.3rem;
+      line-height: 1.3em; }
+  /*Section Index*/
+  .sectionI {
+    height: 100%;
+    width: 100%; }
+    .sectionI__container__h2 {
+      font-size: 2rem; }
+    .sectionI__container__txt {
+      font-size: 0.8rem; }
+  /*Filmografía*/
+  .ps__main {
+    margin: 3vh 0; }
+  .ps__img {
+    height: 50vh; }
+  /*Discografia*/
+  .sectionD__h1 {
+    font-size: 50px; }
+  .sectionD__grid {
+    grid-template-columns: repeat(1, 0.2fr); }
+    .sectionD__grid__container {
+      width: 300px;
+      height: 300px; }
+      .sectionD__grid__container__title {
+        font-size: 25px;
+        margin: 1rem 0 0 0; }
+      .sectionD__grid__container__txt {
+        font-size: 15px; }
+  .title2 {
+    margin: 0 0 0.5rem 0; } }
+
+@media screen and (max-width: 426px) {
+  /*Hero*/
+  .hero {
+    background-image: url(../img/hugh_laurie_phone_size.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    align-items: initial; } }
+
+@media screen and (max-width: 320px) {
+  /*Navbar*/
+  .nav__title {
+    font-size: 30px; } }
+
+/*Animaciones*/
+@-webkit-keyframes hero__txt {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@keyframes hero__txt {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@-webkit-keyframes hero__title {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateX(-1000px);
+    transform: translateZ(-1400px) translateX(-1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0) translateX(0);
+    transform: translateZ(0) translateX(0);
+    opacity: 1; } }
+
+@keyframes hero__title {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateX(-1000px);
+    transform: translateZ(-1400px) translateX(-1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0) translateX(0);
+    transform: translateZ(0) translateX(0);
+    opacity: 1; } }
+
+/*filmografia card animation*/
+@-webkit-keyframes fade-in-bck {
+  0% {
+    -webkit-transform: translateZ(80px);
+    transform: translateZ(80px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+@keyframes fade-in-bck {
+  0% {
+    -webkit-transform: translateZ(80px);
+    transform: translateZ(80px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
