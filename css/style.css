@@ -1,17 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/* Adobe Font*/
+@import url('https://use.typekit.net/pqd5yrn.css');
 *{  
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "aileron";
+  overflow-x: hidden;
 }
 /*Header*/
 .nav {
-  background-color: white;
+  background-color: #f9f9f9;
   display: flex;
   justify-content: space-between;
   align-items: center; 
-   padding: 2rem 5%;
+  padding: 2rem 5%;
 }
 .nav__container{
   margin: 0 0 0 0;
@@ -28,7 +30,6 @@
   color: #0088a9;
 }
 .nav__element {
-   font-family: "Montserrat", sans-serif;
    font-weight: 500;
    font-size: 20px;
    color: black;
@@ -49,7 +50,7 @@
   border-radius: 50px;
   cursor: pointer ;
   transition: all 0.3s ease 0s;
-  margin: 0 0 0 15rem ;
+  margin: 0 0 0 13rem ;
 }
 .nav__contact:hover {
   background-color: rgba(0, 136, 169, 0.5);
@@ -66,10 +67,10 @@
 
 /* footer */
 footer {
-  background-color: #353535;
+  background-color: #f9f9f9;
   height: auto;
   font-family: "Montserrat";
-  color: white;
+  color: #141414;
   padding-top: 40px;
 }
 .footer_content {
@@ -110,13 +111,6 @@ footer {
 }
 /* footer fin*/
 /*main*/
-.main {
-  background-image: url(../img/teahub.io-erkek-wallpaper-1902330.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-/*main inicio*/
 /*hero*/
 .hero {
   background-image: url(../img/hugh_laurie1.png);
@@ -176,6 +170,7 @@ footer {
 /*Bio*/
 .biografia {
   padding: 8vh 0 8vh 0;
+  background-color: #141414;
 }
 .cont__bio {
   font-size: 14px;
@@ -199,80 +194,102 @@ footer {
   padding: 1vh 5vh;
 }
 /*main movies & films fin*/
-/*main music & videos*/
-.hero__mv {
+/*main Filmografia*/
+.sectionD__h1 {
+  font-family: "aileron",sans-serif;
+  color: #ffffff;
+  text-align: center;
+  margin:48px 0 24px 0;
+  font-weight: 700;
+  font-size: 4rem;
+}
+.sectionD__grid {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(2, 0.4fr);
+  justify-items: center;
+  width: 100%;
+  gap: 17px;
+  justify-content: space-evenly;
+  padding: 4vh;
 }
-.container__mv {
-  font-family: "Montserrat", sans-serif;
+.sectionD__grid__container {
+  position: relative;
+  overflow: hidden;
+  width: 512px;
+  height: 512px;
+  margin: 0 0 1.5rem 0;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px rgb(0 0 0 / 50%);
+  cursor: pointer;
 }
-.img__mv {
-  padding: 1rem 0 1rem 1rem;
+.sectionD__grid__container:hover .sectionD__grid__container__img{
+  transform: scale(1.3); 
 }
-.title__mv {
-  padding: 1rem 0 0 0;
-  font-size: 2.5rem;
+
+.sectionD__grid__container:hover .sectionD__grid__container__overlay{
+  opacity: 1;
+  visibility: visible;
+  -webkit-animation: fade-in-bck 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-bck 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; 
+}
+.sectionD__grid__container__img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+}
+.sectionD__grid__container__overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000080;
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
   text-align: center;
 }
-.txt__mv {
-  padding: 0.5rem 3rem 1rem 1rem;
-  font-size: 1.2rem;
-}
-.video__mv {
-  padding: 4rem 2rem 1rem 1rem;
-}
-.table__mv {
+.sectionD__grid__container__title {
+  font-size: 2rem;
+  margin-top: 10rem;
+  color: #ffffff;
   text-align: center;
-  border-style: solid;
 }
-.table__elements__mv {
-  color: black;
+.title2 {
+  margin-top: 0;
 }
-.table__title__mv {
-  padding: 0 0 0 0;
-  font-size: 1.3rem;
+.sectionD__grid__container__txt {
   text-align: center;
-  border-style: solid;
+  color: #ffffff;
+  padding: 0 15%;
 }
-/*main music & videos fin*/
+/*Filmografia fin*/
 
 /*main contact*/
+.sectionC {
+  background-image: url(../img/teahub.io-erkek-wallpaper-1902330.jpg);
+  background-position: center;
+  background-size: cover;
+}
 .formMargen {
   padding: 10vh 0 8vh 0;
   justify-content: space-around;
 }
-.main__contacto {
-  background-color: #d3d5d4;
+.sectionC__contacto {
+  background-color: #141414;
+  color: #ffffff;
 }
-.register__contact {
-  width: 400px;
-  background-color: #24303c;
-  padding: 30px;
-  margin: auto;
-  margin-top: 100px;
-  border-radius: 4px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: white;
+.sectionC__bloque2 {
+  background-color: #141414;
 }
-.register__contact h4 {
-  font-size: 22px;
-  margin-bottom: 20px;
-}
-.controls__mv {
+.sectionC__bloque2__img {
   width: 100%;
-  background: #24303c;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  border: 1px solid #0088a9;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 18px;
+  height: 100%;
 }
-.register__contact p {
-  height: 40px;
-  text-align: center;
-  font-size: 18px;
+.sectionC__contacto__buttom {
+  background-color: #0088a9;
+  border-color: #0088a9;
+  border-radius: 25px;
+  letter-spacing: 2px;
 }
 /* Media Queries (Estilos Mobile*/
 @media screen and (max-width: 768px) {
@@ -281,25 +298,43 @@ footer {
     margin: 0;
   }
   /*Index*/
+  /*hero*/
   .hero {
-    background-position: center 50%;
+    background-image: url(../img/hugh_laurie_phone_size.png);
+    background-position: center;
+    background-size: cover;
     width: 100%;
     height: 70vh;
+    align-items: initial;
   }
-  .hero__txt {
-    font-size: 20px;
-    margin: 70px 10%;
+  .hero__contenedor {
+    margin: 0;
   }
   .hero__title {
-    font-size: 30px;
+    font-size: 40px;
+    margin: 0;
+    padding: 2rem 0 0 1.3rem;
   }
+  .hero__title2 {
+    margin: 0;
+    padding: 0 0 1rem 1.3rem;
+    font-size: 50px;
+  }
+  .hero__txt {
+    font-size: 15px;
+    margin: 0;
+    padding: 0 7rem 0 1.3rem;
+    line-height: 1.3em;
+  }
+  /*hero fin*/
   .section {
-    height: 70vh;
+    height: 100%;
     width: 100%;
   }
-  .section__txt {
-    padding: 0 5%;
-    width: 100%;
+  .section__container__h2 {
+    font-size: 2rem;
+  }
+  .section__container__txt {
     font-size: 0.8rem;
   }
   /*Bio*/
@@ -310,12 +345,34 @@ footer {
   .ps__img {
     height: 50vh;
   }
+  /*Discografia*/
+  .sectionD__h1 {
+    font-size: 50px;
+  }
+  .sectionD__grid {
+    grid-template-columns: repeat(1, 0.2fr);
+  }
+  .sectionD__grid__container {
+    width: 300px;
+    height: 300px;
+  }
+  .sectionD__grid__container__title {
+    font-size: 25px;
+    margin: 1rem 0 0 0;
+  }
+  .title2 {
+    margin: 0 0 0.5rem 0;
+  }
+  .sectionD__grid__container__txt {
+    font-size: 15px;
+  }
 }
 @media screen and  (max-width: 320px){
   .nav__title {
     font-size: 30px;
   }
 }
+
 /*Animaciones*/
 @-webkit-keyframes hero__txt {
   0% {
@@ -362,6 +419,31 @@ footer {
   100% {
     -webkit-transform: translateZ(0) translateX(0);
             transform: translateZ(0) translateX(0);
+    opacity: 1;
+  }
+}
+/*filmografia card animation*/
+@-webkit-keyframes fade-in-bck {
+  0% {
+    -webkit-transform: translateZ(80px);
+            transform: translateZ(80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bck {
+  0% {
+    -webkit-transform: translateZ(80px);
+            transform: translateZ(80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
     opacity: 1;
   }
 }
