@@ -68,9 +68,8 @@
 footer {
   background-color: #f9f9f9;
   height: auto;
-  font-family: "Montserrat";
   color: #141414;
-  padding-top: 40px;
+  padding: 1rem 0 0 0;
 }
 .footer_content {
   display: flex;
@@ -78,11 +77,6 @@ footer {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-}
-.footer_content h3 {
-  font-size: 1.8rem;
-  font-weight: 400;
-  text-transform: capitalize;
 }
 .footer_bottom p {
   font-size: 14px;
@@ -94,6 +88,9 @@ footer {
   align-items: center;
   justify-content: center;
   margin: 1rem 0 1rem 0;;
+}
+.socialMedia {
+  color: #141414;
 }
 .socials li {
   margin: 0 10px;
@@ -167,30 +164,93 @@ footer {
 /*main fin*/
 
 /*Bio*/
-.biografia {
+.sectionB {
   padding: 8vh 0 8vh 0;
   background-color: #141414;
 }
-.cont__bio {
-  font-size: 14px;
-  border-style: ridge;
-  border-color:#353535;
-  background-color: #d3d5d4;
+.sectionB__container {
+  background-color: #141414;
+  color: #f9f9f9;
   border-radius: 1%;
+}
+.sectionB__container__h1 {
+  font-size: 58px;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+}
+.sectionB__container__h2 {
+  font-weight: 700;
+}
+.sectionB__container__p {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+}
+.sectionB__container2 {
+  height: 100%;
+}
+.sectionB__container2__img {
+  width: 100%;
+  height: 100%;
 }
 /* main bio fin*/
 /* main Filmografía*/
-.ps__main {
-  margin: 5vh 10%;
+.sectionF {
+  padding: 8vh 0 8vh 0;
+  background-color: #141414;
 }
-.ps__img {
-  height: 80vh;
+.sectionF__container {
+  color: #f9f9f9;
+  margin: 0 0 3rem 0;
 }
-.ps__title {
-  padding:  0 5vh;
+.sectionF__container__title {
+  font-size: 56px;
+  font-weight: 700;
 }
-.ps__txt {
-  padding: 1vh 5vh;
+.sectionF__container__txt {
+  font-size: 20px;
+  padding: 0 30rem 0 0;
+}
+.sectionF__grid {
+  display: grid;
+  grid-template-columns: repeat(3,0.4fr);
+}
+.sectionF__grid__container {
+  width: 350px;
+  height: 350px;
+  cursor: pointer;
+}
+.sectionF__grid__container__img {
+  width: 100%;
+  height: 80%;
+}
+.sectionF__grid__container_txt {
+  background-color: #f9f9f9;
+  color: #141414;
+  height: auto;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  font-size: 21px;
+}
+.sectionF__grid__container_txt__font {
+  font-weight:bold;
+  align-items: center;
+}
+.sectionF__modal {
+  background-color: #141414;
+}
+.sectionF__modal__h1 {
+  font-weight: 700;
+  color: #f9f9f9;
+}
+.sectionF__modal__container {
+  margin: 1rem 0 0 0;
+}
+.sectionF__modal__container__p {
+  font-size: 20px;
+  color: #f9f9f9;
+}
+.btn__color {
+  background-color: #f9f9f9;
 }
 /*main Filmografia fin*/
 /*main Discografia*/
@@ -281,6 +341,15 @@ footer {
   background-color: #141414;
   color: #ffffff;
 }
+.sectionC__contacto__h1 {
+  font-size: 97px;
+  font-weight: 700;
+}
+.sectionC__contacto__label {
+  font-size: 27px;
+  color: #9b9b9b;
+  font-weight: 700;
+}
 .sectionC__bloque2 {
   background-color: #141414;
 }
@@ -293,6 +362,8 @@ footer {
   border-color: #0088a9;
   border-radius: 25px;
   letter-spacing: 2px;
+  margin-top: 2rem;
+  width: 40%;
 }
 /*Media Queries (Estilos Tablet & Mobile)*/
 @media screen and (max-width: 768px) {
@@ -341,12 +412,22 @@ footer {
     font-size: 0.8rem;
   }
   /*Bio*/
-  /*Peliculas&Series*/
-  .ps__main {
-    margin: 3vh 0;
+  .sectionB__container__p {
+    font-size: 15px;
   }
-  .ps__img {
-    height: 50vh;
+  /*Filmografia*/
+  .sectionF__container__title {
+    text-align: center;
+  }
+  .sectionF__container__txt {
+    padding: 1rem;
+  }
+  .sectionF__grid {
+    grid-template-columns: repeat(1,0.2fr);
+    place-content: center;
+  }
+  .sectionF__grid__container {
+    margin: 0 0 2rem 0
   }
   /*Discografia*/
   .sectionD__h1 {
@@ -369,6 +450,10 @@ footer {
   .sectionD__grid__container__txt {
     font-size: 15px;
   }
+  /*Contacto*/
+  .sectionC__bloque2{
+    content:url("../img/HughLaurieContactoPhone.png");
+}
 }
 
 @media screen and (max-width: 426px){
@@ -379,6 +464,17 @@ footer {
     width: 100%;
     height: 70vh;
     align-items: initial;
+  }
+  /*filmografia*/
+  .sectionF__modal__container__p {
+    font-size: 15px;
+  }
+  /*contacto*/
+  .sectionC__contacto__h1 {
+    font-size: 50px;
+  }
+  .sectionC__contacto__label {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 320px){

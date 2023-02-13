@@ -44,12 +44,23 @@
       font-size: 0.8rem;
     }
   }
-  /*Filmografía*/
-  .ps__main {
-    margin: 3vh 0;
+  /*Bio*/
+  .sectionB__container__p {
+    font-size: 15px;
   }
-  .ps__img {
-    height: 50vh;
+  /*Filmografía*/
+  .sectionF__container__title {
+    text-align: center;
+  }
+  .sectionF__container__txt {
+    padding: 1rem;
+  }
+  .sectionF__grid {
+    grid-template-columns: repeat(1,0.2fr);
+    place-content: center;
+  }
+  .sectionF__grid__container {
+    margin: 0 0 2rem 0
   }
   /*Discografia*/
   .sectionD__h1 {
@@ -72,6 +83,10 @@
   .title2 {
     margin: 0 0 0.5rem 0;
   }
+  /*Contacto*/
+  .sectionC__bloque2{
+    content:url("../img/HughLaurieContactoPhone.png");
+}
 }
 @media screen and (max-width: 426px){
   /*Hero*/
@@ -82,6 +97,17 @@
     width: 100%;
     height: 70vh;
     align-items: initial;
+  }
+   /*filmografia*/
+   .sectionF__modal__container__p {
+    font-size: 15px;
+  }
+  /*contacto*/
+  .sectionC__contacto__h1 {
+    font-size: 50px;
+  }
+  .sectionC__contacto__label {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 320px){
